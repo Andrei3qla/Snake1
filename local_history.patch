@@ -1,0 +1,33 @@
+Index: src/sample/Snake.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/sample/Snake.java	(revision )
++++ src/sample/Snake.java	(revision )
+@@ -10,6 +10,8 @@
+ import java.util.Iterator;
+ import java.util.concurrent.TimeUnit;
+ 
++import static sample.Controller.gameOver;
++import static sample.Controller.gameOverPane;
+ import static sample.Controller.paintThread;
+ 
+ /**
+@@ -143,7 +145,6 @@
+ 
+ 
+     public void move() {
+-        //System.out.println(this.collideItself());
+         if (!collideItself()) {
+             switch (dir) {
+                 case "W":
+@@ -163,6 +164,8 @@
+             }
+         }
+             else {
++
++
+ 
+         }
+     }
